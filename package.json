@@ -1,7 +1,6 @@
 {
   "devDependencies": {
-    "nodemon": "^3.1.14",
-    "prettier": "^3.9.6"
+    "nodemon": "^3.1.14"
   },
   "name": "complex-backend",
   "version": "1.0.0",
@@ -14,7 +13,11 @@
     "brace-expansion": "^5.0.9",
     "braces": "^3.0.3",
     "chokidar": "^3.6.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
     "debug": "^4.4.3",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
     "fill-range": "^7.1.1",
     "glob-parent": "^5.1.2",
     "has-flag": "^3.0.0",
@@ -24,6 +27,7 @@
     "is-glob": "^4.0.3",
     "is-number": "^7.0.0",
     "minimatch": "^10.2.6",
+    "mongoose": "^9.9.5",
     "ms": "^2.1.3",
     "normalize-path": "^3.0.0",
     "picomatch": "^2.3.2",
@@ -37,7 +41,8 @@
     "undefsafe": "^2.0.5"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "repository": {
     "type": "git",
@@ -46,7 +51,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/doer431/complex-backend/issues"
   },
